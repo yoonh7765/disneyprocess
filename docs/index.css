@@ -1,0 +1,218 @@
+@media ( min-width: 1900px ) {
+    body { overflow-x:hidden; }
+  }
+  html > body{
+    min-width:1920px;
+  }
+  body{
+    width:1920px;
+  }
+  
+  /*스크롤바*/
+  ::-webkit-scrollbar-track
+  {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background-color: #F5F5F5;
+      border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar
+  {
+      width: 12px;
+      background-color: #F5F5F5;
+  }
+  
+  ::-webkit-scrollbar-thumb
+  {
+      border-radius: 10px;
+      background-color: #332287;
+      background-image: -webkit-linear-gradient(90deg,
+                                                transparent,
+                                                rgba(0, 0, 0, 0.4) 50%,
+                                                transparent,
+                                                transparent)
+  }
+  
+  /*frame1*/
+  .img-box::after{
+     content:"";
+    background-color:rgba(0,0,0,0.5);
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transition:1s;
+    animation: fadein 2s linear forwards;
+  }
+  
+  @keyframes fadein {
+      from {
+          opacity:1;
+      }
+      to {
+            opacity:0;
+      }
+  }
+  
+  .frame1-box-1{
+    top:76px;
+    left:89px;
+  }
+  .frame1-box-2{
+    top:76px;
+    left:1508px;
+  }
+  .frame1-box-3{
+    top:785px;
+    left:860px;
+  }
+  /* 오버뷰 */
+  .frame2-box-1{
+    top:334px;
+    left:294px;
+  }
+  .frame2-box-2{
+    top:218px;
+    left:576px;
+  }
+  .frame2-box-3{
+    top:213px;
+    left:1091.46px;
+  }
+  .frame2-box-4{
+    top:791px;
+    left:315px;
+  }
+  /* 프로잭트 골 */
+  .frame3-box-1{
+    top:236px;
+    left:483px;
+  }
+  .frame3-box-2{
+    top:236px;
+    left:900px;
+  }
+  .frame3-box-3{
+    top:236px;
+    left:1141px;
+  }
+  /* 디자인 컨셉 키워드 */
+  .frame5_box-1{
+    top:372px;
+    left:990px;
+  }
+  /* 메인 페이지*/
+  .frame6-box-1{
+    top:238px;
+    left:1406px;
+  }
+  .frame6-box-2{
+  top:371px;
+  left:1406px;
+  }
+  .frame6-box-3{
+  top:716px;
+  left:1406px;
+  }
+  .frame6-box-4{
+  top:1251px;
+  left:1406px;
+  }
+  .frame6-box-5{
+  top:2383px;
+  left:1406px;
+  }
+  .frame6-box-6{
+  top:3271px;
+  left:1406px;
+  }
+  /* 서브페이지 1 */
+  .frame7-box-1{
+    top:502px;
+  left:1464px;
+  }
+  .frame7-box-2{
+    top:1194px;
+  left:1464px;
+  }
+  /* 서브페이지 2 */
+  .frame8-box-1{
+    top:634px;
+    left:1464px;
+  }
+  .frame8-box-2{
+    top:962px;
+    left:1464px;
+  }
+  .frame8-box-3{
+    top:1459px;
+    left:1464px;
+  }
+  /* 컬러 팔렛트 */
+  .frame9-box-1{
+    top:179px;
+    left:296px;
+  }
+  .frame9-box-2{
+    top:323px;
+  }
+  /* 타이포그래피 */
+  .frame10-box-1{
+    top:119px;
+    left:1012px;
+  }
+  /* 웤 프로세스 */
+  .frame11-box-1{
+    top:571px;
+    left:310px;
+  }
+  /* 퍼블리싱 */
+  .frame12{
+    overflow-x:hidden;
+  }
+  .frame12-box-1{
+    top:138px;
+    left:835px;
+  }
+  /* 에필로그 */
+  .frame13-box-1{
+    top:104px;
+    left:699px;
+  }
+  /*내이름*/  
+  .sign-1 svg path {
+    fill: rgba(0, 0, 0, 0);
+    stroke: #000;
+    stroke-width: 3;
+    stroke-dasharray: 1000;
+    animation-name: dash-ani-1;
+    animation-duration: 3s;
+    animation-play-state: paused;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+  }
+  
+  .sign-1.aos-animate svg path {
+    animation-play-state: running;
+  }
+  
+  @keyframes dash-ani-1 {
+    0% {
+      stroke-dashoffset: 1000;
+      stroke: rgba(0,0,0,0);
+    }
+  
+    5% {
+      stroke: rgba(0,0,0,1);
+    }
+  
+    95% {
+      stroke-dashoffset: 0;
+      stroke: rgba(0,0,0,1);
+    }
+  
+    100% {
+      stroke: rgba(0,0,0,0);
+    }
+  }
